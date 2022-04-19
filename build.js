@@ -450,7 +450,7 @@ function startPrompt() {
 }
 
 function useIfDefined(what, def) {
-  return (typeof what === 'undefined' ? def : what);
+  return (typeof what === 'undefined' ? def : what !== '0');
 }
 
 if (process.env.ACCEPT_HIGHCHARTS_LICENSE) {
